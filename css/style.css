@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-image: url(../assets/bg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    background: linear-gradient(#541d09 , #8a5d1c);
+    height: 90vmin;
+    width: 98vmin;
+    border: 2px solid darkgreen;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+.head{
+    /* background-color: greenyellow; */
+    background: linear-gradient(greenyellow , green);
+    border: 1px ridge white;
+    border-radius: 12px;
+    transform: scale(1.02);
+}
+.snake {
+    background-color: green;
+    border-radius: 45%;
+    border: 1px ridge white;
+}
+
+.food{
+    /* background-color: #DBBBF5; */
+    /* background: linear-gradient(rgb(222, 110, 177) , #d780ede9); */
+    background: linear-gradient(purple , red);
+    border-radius: 8px;
+}
+
+#scoreBox {
+    position: absolute;
+    top: 50px;
+    right: 120px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    height: 100px;
+    width: 250px;
+}
+
+#highScoreBox {
+    position: absolute;
+    top: 100px;
+    right: 120px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    height: 100px;
+    width: 250px;
+}
