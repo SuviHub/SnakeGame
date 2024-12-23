@@ -12,8 +12,16 @@ let snakeArr = [
 ]
 let food = {x: Math.round(a + (b-a)*Math.random()) , y: Math.round(a + (b-a)*Math.random())};
 let score = 0;
+let resetGame = document.querySelector("#reset");
+
 
 //Game functions
+
+//resetting the game
+resetGame.addEventListener("click" , () => {
+    localStorage.clear();
+    location.reload();
+});
 
 function main(ctime) {
     window.requestAnimationFrame(main);
@@ -48,7 +56,7 @@ function gameEngine() {
         alert("Game Over !! Press any key to play again");
         snakeArr = [{x:13 , y:15}]; 
         score = 0; 
-
+        scoreBox.innerHTML = "Snake Length : 0";
     }
 
     //if you have eaten the food , increment the score and regenerate food
