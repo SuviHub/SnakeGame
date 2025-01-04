@@ -164,3 +164,14 @@ body {
     cursor: pointer;
     border: 2.5px solid #fff;
 }
+
+
+.musicBtn i{
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    font-size: 33px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
