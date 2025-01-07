@@ -204,3 +204,39 @@ window.addEventListener("keydown", (e) => {
       break;
   }
 });
+
+
+//help icon 
+
+// Select the help icon, modal, and close button
+const helpIcon = document.querySelector('.help i');
+const modal = document.getElementById('helpModal');
+const closeModal = document.querySelector('.modal-content .close');
+
+// Show the modal when help icon is clicked
+helpIcon.addEventListener('click', () => {
+    modal.style.display = 'flex'; // Show the modal
+    modal.classList.add('fade-in'); // Add fade-in animation
+    modal.classList.remove('fade-out'); // Remove any fade-out class
+});
+
+// Close the modal when clicking the close button
+closeModal.addEventListener('click', () => {
+    modal.classList.add('fade-out'); // Add fade-out animation
+    modal.classList.remove('fade-in'); // Remove any fade-in class
+    setTimeout(() => {
+        modal.style.display = 'none'; 
+    }, 300); 
+});
+
+// Close the modal when clicking outside the modal content
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.classList.add('fade-out'); // Add fade-out animation
+        modal.classList.remove('fade-in'); // Remove any fade-in class
+        setTimeout(() => {
+            modal.style.display = 'none'; 
+        }, 300); 
+    }
+});
+
