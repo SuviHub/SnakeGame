@@ -1,4 +1,4 @@
-# Snake Game - Eat All You Can
+# Snake Game - Slither Your Way
 A classic Snake Game built with JavaScript, HTML, and CSS. Features smooth animations, real-time controls, sound effects, and persistent high-score tracking using localStorage. Play, grow the snake by eating food, and avoid collisions with walls or yourself.  
 ## Key Features
 #### 1. Smooth Animation
